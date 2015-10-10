@@ -39,21 +39,28 @@ namespace GameTools
         }
 
 
-        // ===================================================================
+        // =========================================================================================
+        // CONSTRUCTOR FLEEET (vogon) 
+        // =========================================================================================
         public ScreenManager(Game game) : base(game)
         {
             this.spriteBatch = new SpriteBatch(game.GraphicsDevice);
             isInitialized = true;
         }
 
-        // I belive this method is completely useless.
+        // =========================================================================================
+        // LOADCONTENT 
+        // =========================================================================================
+        // I belive this method is probably useless.
         // When a new screen is added with AddScreen(), that
         // screen's LoadContent() is called at that time.
         protected override void LoadContent()
         {
 
         }
-
+        // =========================================================================================
+        // UNLOAD 
+        // =========================================================================================
         protected override void UnloadContent()
         {
             foreach (Screen screen in screens)
@@ -61,7 +68,9 @@ namespace GameTools
                 screen.UnloadContent();
             }
         }
-
+        // =========================================================================================
+        // UPDATE 
+        // =========================================================================================
         public override void Update(GameTime gameTime)
         {
             screensToUpdate.Clear();
@@ -71,7 +80,7 @@ namespace GameTools
                 screensToUpdate.Add(screen);
             }
             bool otherScreenHasFocus = false;
-            // NOTE:  YOU MAY NEED TO REVISIT THIS WHEN ADDING NEW SCREENS!!!!!!!!!!
+            // TODO:  YOU MAY NEED TO REVISIT THIS WHEN ADDING NEW SCREENS!!!!!!!!!!
             // ^^ originally Game.IsActive
             bool coveredByOtherScreen = false;
 
@@ -100,7 +109,9 @@ namespace GameTools
                 }
             }
         }
-
+        // =========================================================================================
+        // TRACE 
+        // =========================================================================================
         void TraceScreens()
         {
             List<String> screenNames = new List<String>();
@@ -111,7 +122,9 @@ namespace GameTools
         }
 
 
-
+        // =========================================================================================
+        // DRAW 
+        // =========================================================================================
         public override void Draw(GameTime gameTime)
         {
             foreach (Screen screen in screens)
@@ -127,7 +140,9 @@ namespace GameTools
             }
         }
 
-
+        // =========================================================================================
+        // ADD SCREEN 
+        // =========================================================================================
         public void AddScreen(Screen screen)
         {
             screen.ScreenManager = this;
@@ -138,7 +153,9 @@ namespace GameTools
             }
             screens.Add(screen);
         }
-
+        // =========================================================================================
+        // REMOVE SCREEN 
+        // =========================================================================================
         public void RemoveScreen(Screen screen)
         {
             if (isInitialized)
@@ -149,6 +166,9 @@ namespace GameTools
             screensToUpdate.Remove(screen);
         }
 
+        // =========================================================================================
+        // GET array - not used currently 
+        // =========================================================================================
         public Screen[] GetScreens()
         {
             return screens.ToArray();

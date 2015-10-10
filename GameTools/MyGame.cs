@@ -2,14 +2,15 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
+// =======================================
+// INFO:   This little framework is based on an example
+// originally found within the XNA community platform.
+// The copy I found was very broken.  
+// I have updated to make it work, and added mouse support.
+// =======================================
+
 namespace GameTools
 {
-    
-
-    /// <summary>
-    /// This is the main type for your game.
-    /// </summary>
-    
     public class MyGame : Game
     {
 
@@ -24,21 +25,11 @@ namespace GameTools
             graphics.PreferredBackBufferHeight = 720;
 
             Content.RootDirectory = "Content";
-
-            
-
         }
 
 
         // =========================================================================================
         // INIT 
-        // =========================================================================================
-        /// <summary>
-        /// Allows the game to perform any initialization it needs to before starting to run.
-        /// This is where it can query for any required services and load any non-graphic
-        /// related content.  Calling base.Initialize will enumerate through any components
-        /// and initialize them as well.
-        /// </summary>
         // =========================================================================================
         protected override void Initialize()
         {
@@ -56,10 +47,6 @@ namespace GameTools
         // =========================================================================================
         // LOAD 
         // =========================================================================================
-        /// <summary>
-        /// LoadContent will be called once per game and is the place to load
-        /// all of your content.
-        /// </summary>
         protected override void LoadContent()
         {
             Fonts.LoadContent(Content);
@@ -75,10 +62,6 @@ namespace GameTools
         // =========================================================================================
         // UNLOAD 
         // =========================================================================================
-        /// <summary>
-        /// UnloadContent will be called once per game and is the place to unload
-        /// game-specific content.
-        /// </summary>
         protected override void UnloadContent()
         {
             // TODO: Unload any non ContentManager content here
@@ -92,11 +75,6 @@ namespace GameTools
         // =========================================================================================
         // UPDATE 
         // =========================================================================================
-        /// <summary>
-        /// Allows the game to run logic such as updating the world,
-        /// checking for collisions, gathering input, and playing audio.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
             // if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
@@ -120,10 +98,6 @@ namespace GameTools
         // =========================================================================================
         // DRAW 
         // =========================================================================================
-        /// <summary>
-        /// This is called when the game should draw itself.
-        /// </summary>
-        /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.Transparent);
