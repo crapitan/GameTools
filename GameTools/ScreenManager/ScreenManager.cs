@@ -166,6 +166,12 @@ namespace GameTools
             screensToUpdate.Remove(screen);
         }
 
+        public void RemoveAllScreens()
+        {
+            screens = null;
+            screens = new List<Screen>();
+        }
+
         // =========================================================================================
         // GET array - not used currently 
         // =========================================================================================

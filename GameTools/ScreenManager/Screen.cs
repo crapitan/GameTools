@@ -23,11 +23,8 @@ namespace GameTools
         //==============================================================
 
 
-        //==============================================================
-        /// <summary>
-        /// If the screen is a popup, other screens don't need to transition off.
-        /// </summary>
-        //==============================================================
+
+        // If the screen is a popup, other screens don't need to transition off.
         bool isPopUp = false;
         public bool IsPopUp
         {
@@ -35,18 +32,16 @@ namespace GameTools
             protected set { isPopUp = value; }
         }
 
-        /// <summary>
         /// The amount of time it takes to transition on to the screen
-        /// </summary>
         TimeSpan transInTime = TimeSpan.Zero;
         public TimeSpan TransInTime
         {
             get { return transInTime; }
             protected set { transInTime = value; }
         }
-        /// <summary>
+
+
         /// The amount of time it takes to transition off the screen
-        /// </summary>
         TimeSpan transOutTime = TimeSpan.Zero;
         public TimeSpan TransOutTime
         {
@@ -76,11 +71,8 @@ namespace GameTools
         }
 
 
-        // Exit fieldprops
-
+        // properties for exiting the screen
         public EventHandler Exiting;
-
-
 
         bool isExiting = false;
         public bool IsExiting
@@ -97,8 +89,6 @@ namespace GameTools
             }
         }
 
-
-
         bool otherScreenHasFocus;
         public bool IsActive
         {
@@ -112,6 +102,7 @@ namespace GameTools
 
         // the manager that this screen belongs to.
         ScreenManager screenManager;
+
         public ScreenManager ScreenManager
         {
             get { return screenManager; }

@@ -49,6 +49,8 @@
     <Compile Include="ScreenManager\ScreenManager.cs" />
     <Compile Include="Screens\MainMenuScreen.cs" />
     <Compile Include="Screens\MessageBoxScreen.cs" />
+    <Compile Include="Screens\vidyaExitPopUp.cs" />
+    <Compile Include="Screens\VidyaGameScreen.cs" />
     <Compile Include="Sprite.cs" />
   </ItemGroup>
   <ItemGroup>

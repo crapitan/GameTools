@@ -96,7 +96,7 @@ namespace GameTools
             else if (InputManager.IsActionTriggered(InputManager.Action.Back) ||
                 InputManager.IsActionTriggered(InputManager.Action.ExitGame))
             {
-                OnCancel();
+                ScreenManager.AddScreen(new MessageBoxScreen("Do you really, really want to quit??"));
             }
             else if (selectedEntry != oldSelectedEntry)
             {
