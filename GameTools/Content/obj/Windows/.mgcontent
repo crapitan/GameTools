@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>D:/Cupstudio/GameTools/GameTools/Content/Screens/bg_blueGrunge.png</File>
+    <File>D:/Cupstudio/GameTools/GameTools/Content/placeholder-graphic.png</File>
+    <File>D:/Cupstudio/GameTools/GameTools/Content/Fonts/Peric-36.spritefont</File>
+    <File>D:/Cupstudio/GameTools/GameTools/Content/Screens/blankButton.png</File>
+    <File>D:/Cupstudio/GameTools/GameTools/Content/Fonts/Peric-18.spritefont</File>
+    <File>D:/Cupstudio/GameTools/GameTools/Content/Fonts/Peric-24.spritefont</File>
+    <File>D:/Cupstudio/GameTools/GameTools/Content/Fonts/SegoeMono-12.spritefont</File>
+    <File>D:/Cupstudio/GameTools/GameTools/Content/Screens/blackButton.png</File>
+    <File>D:/Cupstudio/GameTools/GameTools/Content/Screens/popUpZigZag.png</File>
+    <File>D:/Cupstudio/GameTools/GameTools/Content/Screens/faded.png</File>
+    <File>D:/Cupstudio/GameTools/GameTools/Content/Screens/blackButtonSmall.png</File>
+    <File>D:/Cupstudio/GameTools/GameTools/Content/Screens/popUpZiggy.png</File>
+  </SourceFiles>
+</SourceFileCollection>
